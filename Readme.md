@@ -1,1 +1,0 @@
-Angular 2 for some ideas
