@@ -865,3 +865,13 @@ ul.social-network li a {
 .social-network li:hover .fa-pinterest-square {
   color: #EA4B49; 
 }
+
+#happyNumbers .h-number{
+  background: #0077b5;
+  height: 50px;
+  color:white;
+  font-size:24px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 12px;
+}
