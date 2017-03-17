@@ -1,15 +1,16 @@
-(function($) {
-    $(function() {
+(function ($) {
+    'use strict';
+    $(function () {
         /**
          * Generates a Roman Number String from given number
-         * 
-         * @param {any} num 
-         * @returns 
+         *
+         * @param {any} num
+         * @returns
          */
         function generateRomanNumber(num) {
-            if (isNaN(num)) return 'Bitte nur Zahlen eingeben';
+            if (isNaN(num)) { return 'Bitte nur Zahlen eingeben'; }
             num = parseInt(num);
-            const index = {
+            var index = {
                 'M': 1000,
                 'CM': 900,
                 'D': 500,
@@ -34,7 +35,7 @@
             return result;
         }
 
-        $('#number').on('keyup change', function(){
+        $('#number').on('keyup change', function () {
             $('#romanNumber').html(
                 generateRomanNumber(Number($('#number').val()))
             );
