@@ -31,7 +31,7 @@
             return result;
         }
 
-        $("#number").on("keyup", function(){
+        $("#number").on("keyup change", function(){
             $("#romanNumber").html(generateRomanNumber(Number($("#number").val())));
         });
 
