@@ -1,9 +1,9 @@
 (function ($) {
     $(function () {
 
-        $('#output').click(function(e){
+        $('#output').click(function (e) {
             e.preventDefault();
-            getHappyNumbersComplete(Number($('#from').val()),Number($('#to').val()));
+            getHappyNumbersComplete(Number($('#from').val()), Number($('#to').val()));
         });
         function getHappyNumbersComplete(start, end) {
             var $happyNumbers = $('#happyNumbers');
@@ -16,6 +16,10 @@
             }
 
             $happyNumbers.html(buildHtml(arr));
+            $(".h-number").each(function(id){
+                var stopFor = 300 * parseInt(id);
+                $(this).delay(stopFor).animate({'opacity': "1"}, "slow");
+            });
         }
 
         function getHappyNumber(num, init, tmpArray) {
@@ -50,7 +54,7 @@
         function buildHtml(arr) {
             var result = ""
             for (var i = 0; i < arr.length; i++) {
-                result += "<div class='col-md-1 h-number' ><span>" + arr[i] + "</span></div>";
+                result += "<div style='opacity:0' class='col-md-1 h-number' ><span>" + arr[i] + "</span></div>";
             }
             result += "";
             return result;
