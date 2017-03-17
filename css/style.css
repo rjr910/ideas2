@@ -38,7 +38,7 @@ h6 {
 
 h1{
   font-size: 36px;
-  color:#fff;
+  /*color:#fff;*/
 }
 
 h2{
@@ -874,4 +874,8 @@ ul.social-network li a {
   border-radius: 10px;
   text-align: center;
   padding-top: 12px;
+}
+
+#romanNumber{
+  word-wrap: break-word; 
 }
