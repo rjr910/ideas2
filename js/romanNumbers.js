@@ -26,7 +26,7 @@
                 'I': 1,
             };
             var result = '';
-            for (i in index) {
+            for (var i in index) {
                 while (num >= index[i]) {
                     result += i;
                     num -= index[i];
